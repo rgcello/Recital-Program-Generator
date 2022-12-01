@@ -62,7 +62,7 @@ def recitalCSV_to_HTML(filepath, file):
                     new_html.write("<div class='performer'>" +
                                    student + "</div>")
                 new_html.write('</td></tr>')
-    new_html.write('<tr><td colspan="2" class="footer">' +
+    new_html.write('<tr><td colspan="2" class="footer"><hr style="width: 70%" />' +
                    footer + '</td></tr></table></div></body></html>')
     new_html.close()
 
