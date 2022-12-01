@@ -18,7 +18,7 @@ def recitalCSV_to_HTML(filepath, file):
 
     file_name = file.split(".")
     new_html = open("outbox/" + file_name[0] + '.html', 'w+')
-    new_html.write('<!DOCTYPE html><html lang="en"><head><link rel="stylesheet" href="css/recital.css"><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Document</title></head><body><div id="printPage">')
+    new_html.write('<!DOCTYPE html><html lang="en"><head><link rel="stylesheet" href="../css/recital.css"><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Document</title></head><body><div id="printPage">')
     with open(filepath, 'r') as csvfile:
 
         csvreader = csv.reader(csvfile)
